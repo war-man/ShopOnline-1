@@ -1,0 +1,17 @@
+﻿@model List<ShopOnline.Model.ProductCategoryModel.ProductCategoryViewModel>
+
+@foreach(var item in Model.Where(x =>x.ParentId==null))
+{
+    <li  class="sub-cat">
+        <a href="shop_grid.html"><span>@item.Name</span></a>
+        @if (Model.Any(x => x.ParentId == item.Id))
+        {
+            <ul>
+                @foreach (var jitem in Model.Where(x => x.ParentId == item.Id))
+                {
+                    <li> <a href="shop_grid_right.html"> <span>@jitem.Name</span> </a> </li>
+                }
+            </ul>
+        }
+    </li>
+}

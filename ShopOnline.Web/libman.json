@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twbs-pagination@1.4.2",
+      "destination": "wwwroot/twbs-pagination/",
+      "files": [
+        "jquery.twbsPagination.min.js"
+      ]
+    },
+    {
+      "library": "mustache.js@4.1.0",
+      "destination": "wwwroot/lib/mustache.js/",
+      "files": [
+        "mustache.min.js"
+      ]
+    },
+    {
+      "library": "jquery-treegrid@0.2.0",
+      "destination": "wwwroot/jquery-treegrid/"
+    }
+  ]
+}
